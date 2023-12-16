@@ -1,5 +1,6 @@
 const express = require('express');
 const fs = require('fs');
+const cors = require('cors');
 const dados = require('./dados.json') || { Livros: [] };
 
 function salvarDados() {
@@ -7,6 +8,8 @@ function salvarDados() {
 }
 
 const server = express();
+
+server.use(cors()); 
 server.use(express.json());
 
 server.get('/', (req, res) => {
@@ -189,6 +192,16 @@ server.get('/livros/media-avaliacoes/:id', (req, res) => {
 server.get('/livros/recomendacoes', (req, res) => {
     const livrosRecomendados = dados.Livros.slice(0, 3);
     return res.json(livrosRecomendados);
+});
+
+server.get('/livros/pesquisa/:termo', (req, res) => {
+    const termoConsulta = req.params.termo.toLowerCase();
+    const livrosEncontrados = dados.Livros.filter(livro => {
+        const tituloLowerCase = livro.titulo.toLowerCase();
+        const autorLowerCase = livro.autor.toLowerCase();
+        return tituloLowerCase.includes(termoConsulta) || autorLowerCase.includes(termoConsulta);
+    });
+    return res.json(livrosEncontrados);
 });
 
 server.listen(3000, () => {
