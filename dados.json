@@ -1,0 +1,110 @@
+{
+    "Livros": [
+      {
+        "id": 1,
+        "titulo": "U",
+        "autor": "Lovecraft",
+        "anoPublicado": "10.01.2011",
+        "genero": "ficcao científica"
+      },
+      {
+        "id": 2,
+        "titulo": "O",
+        "autor": "desconhecido",
+        "anoPublicado": "01.01.2023",
+        "genero": "romance"
+      },
+      {
+        "id": 3,
+        "titulo": "I",
+        "autor": "desconhecido",
+        "anoPublicado": "01.01.2023",
+        "genero": "terror"
+      },
+      {
+        "id": 4,
+        "titulo": "E",
+        "autor": "Jesus",
+        "anoPublicado": "10.10.2023",
+        "genero": "misterio"
+      },
+      {
+        "id": 5,
+        "titulo": "A",
+        "autor": "JK",
+        "anoPublicado": "00.00.2000",
+        "genero": "ficcao científica"
+      },
+      {
+        "id": 6,
+        "titulo": "O Senhor dos Anéis",
+        "autor": "JRR Tolkien",
+        "anoPublicado": "01.01.1954",
+        "genero": "fantasia"
+      },
+      {
+        "id": 7,
+        "titulo": "1984",
+        "autor": "George Orwell",
+        "anoPublicado": "08.06.1949",
+        "genero": "distopia"
+      },
+      {
+        "id": 8,
+        "titulo": "Dom Quixote",
+        "autor": "Miguel de Cervantes",
+        "anoPublicado": "28.01.1605",
+        "genero": "classico"
+      },
+      {
+        "id": 9,
+        "titulo": "Cem Anos de Solidão",
+        "autor": "Gabriel Garcia Márquez",
+        "anoPublicado": "30.05.1967",
+        "genero": "realismo magico"
+      },
+      {
+        "id": 10,
+        "titulo": "A Revolução dos Bichos",
+        "autor": "George Orwell",
+        "anoPublicado": "17.08.1945",
+        "genero": "satirico"
+      },
+      {
+        "id": 11,
+        "titulo": "Orgulho e Preconceito",
+        "autor": "Jane Austen",
+        "anoPublicado": "28.01.1813",
+        "genero": "romance classico"
+      },
+      {
+        "id": 12,
+        "titulo": "Fahrenheit 451",
+        "autor": "Ray Bradbury",
+        "anoPublicado": "01.10.1953",
+        "genero": "ficcao cientifica"
+      },
+      {
+        "id": 13,
+        "titulo": "A Máquina do Tempo",
+        "autor": "H.G. Wells",
+        "anoPublicado": "07.05.1895",
+        "genero": "ficcao cientifica"
+      },
+      {
+        "id": 14,
+        "titulo": "O Iluminado",
+        "autor": "Stephen King",
+        "anoPublicado": "28.01.1977",
+        "genero": "terror"
+      },
+      {
+        "id": 15,
+        "titulo": "A Arte da Guerra",
+        "autor": "Sun Tzu",
+        "anoPublicado": "05.05.0000",
+        "genero": "filosofia militar"
+      }
+    ]
+  }
+  

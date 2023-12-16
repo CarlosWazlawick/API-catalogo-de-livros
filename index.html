@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Livros</title>
+</head>
+<body>
+    <h1>Catálogo de Livros</h1>
+
+    <form id="filtroForm">
+        <label for="genero">Filtrar por Gênero:</label>
+        <input type="text" id="genero" name="genero">
+        <button type="button" onclick="filtrarLivros()">Filtrar</button>
+    </form>
+
+    <div id="livros-container"></div>
+
+    <script>
+        async function filtrarLivros() {
+            const genero = document.getElementById('genero').value;
+            const response = await fetch(`/livros/consulta/${genero}`);
+            const livrosFiltrados = await response.json();
+
+            const livrosContainer = document.getElementById('livros-container');
+            livrosContainer.innerHTML = "";
+            livrosFiltrados.forEach(livro => {
+                const livroElement = document.createElement('div');
+                livroElement.innerHTML = `<p><strong>Título:</strong> ${livro.titulo}, <strong>Autor:</strong> ${livro.autor}</p>`;
+                livrosContainer.appendChild(livroElement);
+            });
+        }
+    </script>
+</body>
+</html>
